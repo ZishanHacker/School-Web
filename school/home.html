@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOMEPAGE</title>
+    <link rel="icon" type="image" href="favicon.png">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        min-height: 100vh;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      h2,
+      h3,
+      a {
+        color: #34495e;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .logo {
+        margin: 0;
+        font-size: 1.45em;
+      }
+
+      .main-nav {
+        margin-top: 5px;
+      }
+      .logo a,
+      .main-nav a {
+        padding: 10px 15px;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        color: #ffffff;
+      }
+
+      .main-nav a {
+        color: #ffffff;
+        font-size: 0.99em;
+      }
+
+      .main-nav a:hover {
+        color: #718daa;
+      }
+
+      .header {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border: 1px solid #a2a2a2;
+        background-color: #11dfdf;
+        -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        height: 50px;
+      }
+
+      /* ================================= 
+  Media Queries
+==================================== */
+
+      @media (min-width: 769px) {
+        .header,
+        .main-nav {
+          display: flex;
+        }
+        .header {
+          flex-direction: column;
+          align-items: center;
+        }
+        .header {
+          width: 80%;
+          margin: 0 auto;
+          max-width: 1150px;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .header {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+
+      /* -----------------------------------------LINKS ------------------------------------------ */
+
+      .ul_bro {
+        list-style: none;
+        justify-content: flex-start;
+        display: flex;
+        margin: 20px 20px;
+        padding: 20px 20px 20px;
+        gap: 60px;
+      }
+
+      .anchor {
+        width: 16rem;
+        height: 6rem;
+        background-color: #118ddf;
+        display: flex;
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        text-align: center; /* Center the text within the div */
+        font-size: 1.3em;
+        color: #ffffff;
+        box-shadow: 0 0 5px #1288d6, 0 0 25px #1288d6;
+      }
+
+      .anchor5 {
+        width: 16rem;
+        height: 6rem;
+        background-color: #118ddf;
+        display: flex;
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        text-align: center; /* Center the text within the div */
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.3em;
+        position: absolute;
+        top: 15rem;
+        left: 40px;
+        box-shadow: 0 0 5px #1288d6, 0 0 25px #1288d6;
+      }
+
+      .anchor6 {
+        width: 16rem;
+        height: 6rem;
+        background-color: #118ddf;
+        display: flex;
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        text-align: center; /* Center the text within the div */
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.3em;
+        position: absolute;
+        top: 15rem;
+        left: 356px;
+        box-shadow: 0 0 5px #1288d6, 0 0 25px #1288d6;
+      }
+      .anchor7 {
+        width: 16rem;
+        height: 6rem;
+        background-color: #f71e1ee3;
+        display: flex;
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        text-align: center; /* Center the text within the div */
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.3em;
+        position: absolute;
+        top: 15rem;
+        left: 42rem;
+        box-shadow: 0 0 5px #f71e1ee3, 0 0 25px #f71e1ee3;
+        text-transform: uppercase;
+        visibility: hidden;
+      }
+
+      .anchor:hover {
+        background-color: darkslategrey; /* Change the hover color to red */
+        box-shadow: 0 0 5px darkslategrey, 0 0 25px darkslategrey;
+        color: blue;
+      }
+
+      .anchor5:hover {
+        background-color: darkslategrey; /* Change the hover color to red */
+        box-shadow: 0 0 5px darkslategrey, 0 0 25px darkslategrey;
+        color: blue;
+      }
+
+      .anchor6:hover {
+        background-color: darkslategrey; /* Change the hover color to red */
+        box-shadow: 0 0 5px darkslategrey, 0 0 25px darkslategrey;
+        color: blue;
+      }
+
+      .anchor7:hover {
+        background-color: darkslategrey; /* Change the hover color to red */
+        box-shadow: 0 0 5px darkslategrey, 0 0 25px darkslategrey;
+        color: red;
+      }
+
+      /* Add this media query to your existing CSS */
+      @media screen and (max-width: 769px) {
+        .ul_bro {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .anchor,
+        .anchor5,
+        .anchor6,
+        .anchor7 {
+          width: auto; /* Adjust the width as needed */
+          height: auto; /* Adjust the height as needed */
+          margin: 10px 0; /* Add some margin between the elements */
+          position: static; /* Reset the position */
+          left: auto; /* Reset the left position */
+        }
+
+        .anchor7{
+          visibility: visible;
+        }
+
+        a.anchor_bro{
+            height: auto;
+            width: 13rem;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo"><a href="home.html">ISMA PUBLIC SCHOOL</a></h1>
+      <ul class="main-nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="credits.html">credits</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="BigContainer">
+      <ul class="ul_bro">
+        <li><a href="los.html" class="anchor">LIST OF STUDENTS</a></li>
+        <li><a href="notice.html" class="anchor">NOTICES</a></li>
+        <li><a href="syllabus.html" class="anchor">SYLLABUS</a></li>
+        <li><a href="monitor.html" class="anchor">MONITORS</a></li>
+        <li><a href="ttp.html" class="anchor5">TEACHER AND THEIR PERIODS</a></li>
+        <li><a href="ptt.html" class="anchor6">PERIODS (TIME-TABLE)</a></li>
+        <li><a href="credits.html" class="anchor7">credits</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
